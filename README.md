@@ -1,27 +1,56 @@
-# SrtAiTranslator
+# Translate SRT files with Gemini AI
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.7.
+## Introduction
 
-## Development server
+This Angular app translates subtitles in SRT format using Gemini AI. The translated result can be edited before exporting as an SRT file. The app is built using Angular for the frontend, Tailwind CSS for styling, and Gemini AI for translation services.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Screenshots
 
-## Code scaffolding
+<div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 10px">
+  <img src="./demonstration-images/img1.png" alt="img1" width="300">
+  <img src="./demonstration-images/img2.png" alt="img2" width="300">
+  <img src="./demonstration-images/img3.png" alt="img3" width="300">
+  <img src="./demonstration-images/img4.png" alt="img4" width="300">
+</div>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Features
 
-## Build
+- File Upload: Allows users to upload an SRT file for translation.
+- Translation: Interacts with Gemini AI to perform the subtitle translation.
+- Editor: Edit translated subtitles.
+- Export: Enables users to export the edited subtitles as an SRT file.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Getting Started
 
-## Running unit tests
+### Prerequisites
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Gemini AI API Key (get one [here](https://aistudio.google.com/app/apikey))
+- Node.js and npm installed
 
-## Running end-to-end tests
+### Installation
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1. Clone the repository:
 
-## Further help
+```
+  git clone https://github.com/leurisvg/pokedex.git
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+2. Set your API Key:
+
+Rename `environment.model.ts` to `environment.ts` and paste your API Key.
+
+2. Install dependencies:
+
+```
+  npm install
+```
+
+3. Run the Development Server:
+
+```
+  npm run dev
+```
+
+4. Open the App:
+
+Open your web browser and navigate to http://localhost:4200 to view the app.
